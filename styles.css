@@ -1,0 +1,123 @@
+:root {
+  --bg: hsl(217, 54%, 11%);
+  --cardBg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --price: hsl(178, 100%, 50%);
+  --text: hsl(215, 51%, 70%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0; /* 
+  box-sizing: border-box; */
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+  background: var(--bg);
+}
+
+p {
+  color: var(--text);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 21.875rem;
+  height: 41rem;
+  padding: 0 1rem;
+  background: var(--cardBg);
+  border-radius: 15px;
+  outline: 15px solid hsl(213, 57%, 9%);
+}
+
+.nftImage {
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+.desc {
+  width: 20rem;
+}
+
+.desc h1 {
+  color: var(--white);
+  margin: 1.5rem 0 1rem;
+}
+
+.desc p {
+  font-size: 18px;
+}
+.price {
+  display: flex;
+}
+
+.price h3 {
+  color: var(--price);
+  padding-left: 0.5rem;
+}
+
+.days {
+  display: flex;
+  width: 110px;
+  position: absolute;
+  right: 0;
+}
+
+.days img {
+  padding-right: 0.3rem;
+}
+.priceAndDays {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.author {
+  border-top: 3px solid var(--line);
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.author p {
+  padding-left: 1rem;
+}
+
+.author img {
+  width: 40px;
+  max-width: 40px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+}
+
+.name {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 75%;
+    height: 66%;
+  }
+
+  .author {
+    border-top: 1px solid var(--line);
+    padding-top: 0.8rem;
+  }
+
+  .author img {
+    width: 30px;
+  }
+}
