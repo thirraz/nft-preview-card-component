@@ -43,15 +43,26 @@ p {
   max-width: 100%;
   margin-top: 1rem;
   border-radius: 10px;
+  transition: all 200ms ease-in;
+}
+
+.nftImage:hover {
+  transform: scale(1.13);
 }
 
 .desc {
   width: 20rem;
 }
 
-.desc h1 {
+.desc h1,
+.name {
   color: var(--white);
   margin: 1.5rem 0 1rem;
+}
+
+a,
+.name {
+  text-decoration: none;
 }
 
 .desc p {
@@ -99,11 +110,6 @@ p {
   max-width: 40px;
   border: 2px solid var(--white);
   border-radius: 50%;
-}
-
-.name {
-  color: white;
-  text-decoration: none;
 }
 
 @media screen and (max-width: 375px) {
